@@ -1,0 +1,4 @@
+RoleName###RoleType###Results
+ClerkAxisBkmar###E
+CashierAxisBkmar###E
+poAxisBkmar###E

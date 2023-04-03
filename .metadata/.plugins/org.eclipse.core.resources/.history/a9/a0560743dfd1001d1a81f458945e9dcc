@@ -1,0 +1,25 @@
+package com.mvnscripts;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class SampleMVN {
+
+	public static void main(String[] args) throws InterruptedException 
+	{
+		//Launch Firefox
+	
+		 WebDriver driver=new FirefoxDriver();
+		 driver.manage().window().maximize();
+		 driver.get("http://192.168.1.4/ranford2");
+		 
+		 driver.findElement(By.id("txtuId")).sendKeys("Admin");
+			driver.findElement(By.id("txtPword")).sendKeys("Admin");
+			Thread.sleep(3000);
+			driver.findElement(By.xpath("//*[@id=\'login\']")).click();
+			
+	
+	}
+
+}
